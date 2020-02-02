@@ -3,7 +3,7 @@
 sourceDir = "{{ .chezmoi.homedir }}/envs/{{ $defaultEnv }}/chezmoi"
 
 [data]
-    defaultEnv = "$defaultEnv"
+    defaultEnv = "{{ $defaultEnv }}"
     environments = "{{ .chezmoi.homedir }}/envs"
     opsCharm = "{{ .chezmoi.homedir }}/envs/ops-charm"
     

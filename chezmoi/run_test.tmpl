@@ -1,0 +1,12 @@
+#!/bin/bash
+
+#[data]
+#    environments = "{{ .chezmoi.homedir }}/envs"
+#    opsCharm = "{{ .chezmoi.homedir }}/envs/ops-charm"
+
+echo Cat I haz cheeseburguer?
+echo Do you template this shit? {{.environments}}
+TEMP=$(mktemp -d)
+rmdir $TEMP
+git clone git@github.com:kangco-de/repo-tester.git $TEMP
+rm -rf $TEMP

@@ -11,8 +11,8 @@ if [ -e ~/.bashrc.aliases ] ; then
   source ~/.bashrc.aliases
 fi
 
-export ENVIRONMENTS="$HOME/envs"
-export OPS_CHARM_HOME="$HOME/envs/ops-charm"
+export ENVIRONMENTS="{{ .environments }}"
+export OPS_CHARM_HOME="{{ .opscharm }}"
 
 for bash_function_file in "$ENVIRONMENTS/*/functions-global/*"; do
   if [ -f $bash_function_file ]; then
