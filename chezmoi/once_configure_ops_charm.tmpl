@@ -5,8 +5,11 @@
 #    opscharm = "{{ .chezmoi.homedir }}/envs/ops-charm"
 
 echo Downloading ops-charm...
-git clone github.com/kangco-de/ops-charm {{ .opscharm }} -b devel
-git clone github.com/kangco-de/ops-charm-env-{{ .defaultEnv }} {{ .environments }}/{{ .defaultenv }} -b porting/chezmoi
-
+git clone github.com/kangco-de/ops-charm {{ .opscharm }} -b devel && echo "TODO: try to update to latest version"
 mkvirtualenv ops-charm -r {{ .opscharm }}/requirements.txt
+
+# Chezmoi uses all repo for itself so it will clone env repo on /envs/{{envname}}/chezmoi/chezmoi
+# As we are bootstrapping we could destroy the environment and recreating from scratch
+rm -rf {{ .environments }}/{{ .defaultenv }}
+git clone github.com/kangco-de/ops-charm-env-{{ .defaultenv }} {{ .environments }}/{{ .defaultenv }} -b porting/chezmoi
 mkvirtualenv {{ .defaultenv }} -r {{ .environments }}/{{ .defaultenv }}/requirements.txt
