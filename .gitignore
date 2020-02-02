@@ -1,0 +1,13 @@
+__pycache__
+*.pyc
+
+/gnupg
+/.#*
+/include
+/lib
+/bin
+!/bin/preactivate
+!/bin/predeactivate
+!/bin/postactivate
+!/bin/postdeactivate
+

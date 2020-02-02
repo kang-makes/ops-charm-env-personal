@@ -1,0 +1,19 @@
+export GPG_KEYRING="$(basename `dirname ${BASH_SOURCE[0]}`)"
+export GNUPGHOME="$VIRTUAL_ENV/gnupg"
+
+export GOPASS_HOMEDIR="$VIRTUAL_ENV"
+export PASSWORD_STORE="$VIRTUAL_ENV/keys"
+
+
+
+##################################################
+## Porting
+##################################################
+
+#export HELM_HOME=$HOME/.kube
+#export KREW_ROOT=$HOME/Entornos/personal
+
+#export VIRTUALENVWRAPPER_HOOK_DIR=$HOME/Entornos/op-charm
+#export WORKON_HOME=$HOME/Entornos
+#export PROJECT_HOME=$HOME/Entornos
+#export VIRTUALENVWRAPPER_WORKON_CD=0
