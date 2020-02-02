@@ -2,11 +2,11 @@
 
 #[data]
 #    environments = "{{ .chezmoi.homedir }}/envs"
-#    opsCharm = "{{ .chezmoi.homedir }}/envs/ops-charm"
+#    opscharm = "{{ .chezmoi.homedir }}/envs/ops-charm"
 
 echo Downloading ops-charm...
-git clone github.com/kangco-de/ops-charm {{ .opsCharm }} -b devel
+git clone github.com/kangco-de/ops-charm {{ .opscharm }} -b devel
 git clone github.com/kangco-de/ops-charm-env-{{ .defaultEnv }} {{ .environments }}/{{ .defaultenv }} -b porting/chezmoi
 
-mkvirtualenv ops-charm -r {{ .opsCharm }}/requirements.txt
+mkvirtualenv ops-charm -r {{ .opscharm }}/requirements.txt
 mkvirtualenv {{ .defaultenv }} -r {{ .environments }}/{{ .defaultenv }}/requirements.txt

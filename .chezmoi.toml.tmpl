@@ -1,9 +1,9 @@
-{{- $defaultEnv := promptString "Default ops-charm environment" -}}
+{{- $defaultenv := promptString "Default ops-charm environment" -}}
 
-sourceDir = "{{ .chezmoi.homedir }}/envs/{{ $defaultEnv }}/chezmoi"
+sourceDir = "{{ .chezmoi.homedir }}/envs/{{ $defaultenv }}/chezmoi"
 
 [data]
-    defaultEnv = "{{ $defaultEnv }}"
+    defaultenv = "{{ $defaultenv }}"
     environments = "{{ .chezmoi.homedir }}/envs"
-    opsCharm = "{{ .chezmoi.homedir }}/envs/ops-charm"
+    opscharm = "{{ .chezmoi.homedir }}/envs/ops-charm"
     
