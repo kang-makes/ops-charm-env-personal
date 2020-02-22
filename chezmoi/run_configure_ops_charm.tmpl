@@ -3,7 +3,7 @@
 echo Downloading/updating ops-charm...
 
 if [ ! -d "{{ .environments }}/ops-charm" ]; then
-  git clone github.com/kangco-de/ops-charm {{ .environments }}/ops-charm -b devel
+  git clone https://github.com/kangco-de/ops-charm {{ .environments }}/ops-charm -b devel
 else
   (
     cd "{{ .environments }}/ops-charm"
