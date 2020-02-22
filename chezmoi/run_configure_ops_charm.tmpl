@@ -17,9 +17,9 @@ fi
 
   source "{{ .environments }}/ops-charm/functions-global/ops-charm-loader"
 
-  mkvirtualenv ops-charm -r requirements.txt
+  mkvirtualenv ops-charm -r "{{ .environments }}/ops-charm/requirements.txt"
   deactivate
 
-  mkvirtualenv {{ .defaultenv }} -r requirements.txt
+  mkvirtualenv {{ .defaultenv }} -r "{{ .environments }}/{{ .defaultenv }}/requirements.txt"
   deactivate
 )
