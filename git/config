@@ -1,3 +1,13 @@
 [user]
-	email = devel@kangco.de
-	name = Juan Manuel \"Kang\" Perez
+ email = devel@kangco.de
+ name = Juan Manuel \"Kang\" Perez
+# signingkey = 
+
+#[gpg]
+#	program = charm-git-sign
+
+#[commit]
+#	gpgsign = true
+
+#[tag]
+# forceSignAnnotated = true
