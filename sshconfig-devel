@@ -1,0 +1,5 @@
+Host archlinux.shuffle.virt debian.shuffle.virt ubuntu.shuffle.virt archiso.shuffle.virt archtest.shuffle.virt asteroid-blues.h.kangco.de
+  StrictHostKeyChecking no
+  UserKnownHostsFile /dev/null
+  User root
+  IdentityFile ~/envs/personal/id_rsa

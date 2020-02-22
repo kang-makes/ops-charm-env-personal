@@ -1,0 +1,2 @@
+export KREW_ROOT="$(realpath `dirname ${BASH_SOURCE[0]}`/..)/krew"
+export PATH=$PATH:$KREW_ROOT/bin

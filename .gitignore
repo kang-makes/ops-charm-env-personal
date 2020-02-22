@@ -11,3 +11,5 @@ __pycache__
 !/bin/postactivate
 !/bin/postdeactivate
 
+/id_rsa
+/id_rsa.pub
