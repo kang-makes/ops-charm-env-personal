@@ -1,0 +1,8 @@
+Host *
+  UserKnownHostsFile ~/envs/personal/ssh-known-hosts
+  IdentityFile ~/envs/personal/id_rsa
+  ForwardAgent no
+  ForwardX11 no
+
+Include ~/envs/personal/sshconfig-*
+Include ~/envs/personal/sshconfig.d/*
