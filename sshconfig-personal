@@ -1,6 +1,0 @@
-Host github.com
-  UserKnownHostsFile ~/Entornos/personal/known-hosts/github
-  Hostname github.com
-  IdentityFile ~/envs/personal/id_rsa
-  User git
-  

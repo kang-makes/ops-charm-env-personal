@@ -1,5 +1,12 @@
+Host github--personal
+  UserKnownHostsFile ~/envs/personal/known-hosts
+  Hostname github.com
+  IdentityFile ~/envs/personal/rsa-pub--devel-key
+  User git
+  
+
 Host archlinux.shuffle.virt debian.shuffle.virt ubuntu.shuffle.virt archiso.shuffle.virt archtest.shuffle.virt asteroid-blues.h.kangco.de
   StrictHostKeyChecking no
   UserKnownHostsFile /dev/null
   User root
-  IdentityFile ~/envs/personal/id_rsa
+  IdentityFile ~/envs/personal/rsa-pub--sysadmin-key

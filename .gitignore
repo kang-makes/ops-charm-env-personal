@@ -1,15 +1,16 @@
-__pycache__
-*.pyc
-
-/gnupg
-/.#*
 /include
 /lib
-/bin
+/bin/*
 !/bin/preactivate
 !/bin/predeactivate
 !/bin/postactivate
 !/bin/postdeactivate
 
-/id_rsa
-/id_rsa.pub
+/gnupg/*
+!/gnupg/gpg-agent.conf
+!/gnupg/sshcontrol
+
+
+__pycache__
+*.pyc
+
