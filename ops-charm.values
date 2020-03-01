@@ -1,5 +1,4 @@
-export GPG_KEYRING="$(basename `dirname ${BASH_SOURCE[0]}`)"
 export GNUPGHOME="$VIRTUAL_ENV/gnupg"
 
-export GOPASS_HOMEDIR="$VIRTUAL_ENV"
+export GOPASS_CONFIG="$VIRTUAL_ENV/gopass.yaml"
 export PASSWORD_STORE="$VIRTUAL_ENV/keys"

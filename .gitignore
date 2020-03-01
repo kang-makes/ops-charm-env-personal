@@ -10,7 +10,10 @@
 !/gnupg/gpg-agent.conf
 !/gnupg/sshcontrol
 
+gopass-logo-small.png
 
 __pycache__
 *.pyc
 
+# ===============================================
+/.vscode
