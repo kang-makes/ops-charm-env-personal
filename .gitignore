@@ -10,7 +10,8 @@
 !/gnupg/gpg-agent.conf
 !/gnupg/sshcontrol
 
-gopass-logo-small.png
+/gopass-logo-small.png
+/.gopass-agent.sock
 
 __pycache__
 *.pyc
