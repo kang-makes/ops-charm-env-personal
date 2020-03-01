@@ -6,8 +6,8 @@
 #[gpg]
 #	program = charm-git-sign
 
-#[commit]
-#	gpgsign = true
+[commit]
+	gpgsign = true
 
 #[tag]
 # forceSignAnnotated = true
