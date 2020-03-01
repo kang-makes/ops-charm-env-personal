@@ -1,16 +1,13 @@
 [user]
- email = devel@kangco.de
- name = Juan Manuel \"Kang\" Perez
-# signingkey = 
-
-#[gpg]
-#	program = charm-git-sign
+	email = devel@kangco.de
+	name = Juan Manuel \"Kang\" Perez
 
 [commit]
 	gpgsign = true
 
-#[tag]
-# forceSignAnnotated = true
+[tag]
+	forceSignAnnotated = true
+
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
